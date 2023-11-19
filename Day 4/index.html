@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 - 100 Days Of code Challenge</title>
+    <style>
+        /* #id3{
+            background-color: aqua;
+        }
+        #id4{
+            background-color: blue;
+        } */
+        .group1 {
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- list tag  -->
+    <h4>Unordered List</h4>
+    <ul>
+        <li>Engg. Science</li>
+        <!-- sub list -->
+        <ul>
+            <li>Physics</li>
+            <li>Chemistry</li>
+        </ul>
+        <li>Maths</li>
+    </ul>
+    <h4>ordered list</h4>
+    <ol>
+        <li>Engg. Science</li>
+        <ol type="i">
+            <!-- sub List -->
+            <li>Physics</li>
+            <li>Chemistry</li>
+        </ol>
+        <li>Maths</li>
+    </ol>
+    <hr>
+    <h4>Table Tag</h4>
+    <table>
+        <caption>Student Details</caption>
+        <tr>
+            <th>Name</th>
+            <th>Roll No.</th>
+        </tr>
+        <tr>
+            <td>Saurabh</td>
+            <td>112</td>
+        </tr>
+        <tr>
+            <td>Lalit</td>
+            <td>113</td>
+        </tr>
+    </table>
+
+    <!-- table layout tags -->
+    <table>
+        <caption>Student Details</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Roll No.</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Saurabh</td>
+                <td>112</td>
+                <!-- rowspan attribute -->
+                <th rowspan="3">Cse</th>
+            </tr>
+            <tr>
+                <td>Lalit</td>
+                <td>113</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <!-- colspan attribute -->
+                <td colspan="2">Total 2</td>
+                <!-- <td>2</td> -->
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <h4>Form in HTML</h4>
+    <form action="/action.php">
+        <input type="text" placeholder="Full Name">
+        <br><br>
+        <input type="email" placeholder="enter your mail">
+        <br><br>
+        <input type="password" placeholder="enter your password">
+        <br><br>
+        <input type="number" placeholder="enter your number">
+        <br><br>
+        <label for="id1">
+            <input type="radio" value="class X" id="id1" name="Class">Class X
+        </label>
+        <label for="id2">
+            <input type="radio" value="class XII" id="id2" name="Class">Class XII
+        </label>
+    </form>
+    <hr>
+    <h4>Class & id tags</h4>
+    <!-- id is unique like aadhar number -->
+    <!-- class is like grop of many people -->
+    <div id="id3" class="group1">id3</div>
+    <div id="id4" class="group1">id4 </div>
+    <hr>
+    <h4>Checkbox</h4>
+    <form action="/submit.php">
+        <label for="phy">
+        <input type="checkbox" id="phy" name="phy">Phy
+    </label>
+    <label for="Maths">
+        <input type="checkbox" name="Maths" id="Maths">Maths
+    </label>
+    <br>
+    <!-- textarea -->
+    <textarea name="feedback" id="105" cols="30" rows="10"></textarea>
+    <br>
+    <!-- select - dropdown -->
+    <select name="city" id="city">
+        <option value="Maheshwar">Maheshwar</option>
+        <option value="Indore">Indore</option>
+        <option value="Jaipur">Jaipur</option>
+
+    </select>
+    <!-- submit button -->
+    <input type="submit" value="submit">
+    </form>
+    <hr>
+    <!-- iframe tag -->
+    <h4>Iframe Tag</h4>
+    <p>Website inside website</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=78FDWHY3f27WZQTS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <br>
+    <iframe src="https://en.wikipedia.org/wiki/India" frameborder="0" width="560" height="315"></iframe>
+    <br>
+    <hr>
+    <h4>Video tag</h4>
+    <video src="1.mp4" width="560"  controls loop muted autoplay></video>
+    
+</body>
+
+</html>
