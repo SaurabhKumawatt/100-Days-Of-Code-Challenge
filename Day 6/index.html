@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 - 100 Days of Code Challenge</title>
+    <!-- css and js connecting  -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="Saurabh Kumawat.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+
+        <h3>Heading Tag</h3>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        <hr>
+        <h3>Paragraph tag</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, sint. Inventore rem, explicabo, quas ipsam
+            impedit quod ratione possimus tempora delectus dolorum laborum?</p>
+        <hr>
+        <h3>Html comments</h3>
+        <!-- this is a comment  -->
+        <p>&lt;-- this is a comment --&gt;</p>
+        <hr>
+        <h3>Anchor tag</h3>
+        <a href="https://www.google.com">Go to google</a>
+        <!-- target attribute -->
+        <a href="https://www.google.com" target="_blank">Go to google</a>
+        <hr>
+        <h3>Image tag</h3>
+        <img src="Saurabh Kumawat.jpg" alt="saurabh kumawat" width="500px">
+        <hr>
+        <h3>br tag</h3>
+        <br>
+        <br>
+        <p>br tag used for line break</p>
+        <hr>
+        <h3>Bold, italic & underline tags</h3>
+        <b>I am a bold</b>
+        <i>I am italic</i>
+        <u>i am underlined</u>
+        <hr>
+        <h3>Big & small tag</h3>
+        <big>i am a big</big>
+        <small>i am small</small>
+        <hr>
+        <h3>hr tag - horizintal ruler</h3>
+        <hr>
+        <h3>subscript & superscript tags</h3>
+        <!-- subscript tag -->
+        <p>H<sub>2</sub>O</p>
+        <!-- superscript tag -->
+        <p>12<sup>th</sup></p>
+        <hr>
+        <h3>pre tag</h3>
+        <p>i am a Paragraph</p>
+        <h4>i am a heading</h4>
+        <pre>
+        <p>i am a     Paragraph</p>
+        <h4>i am a    heading</h4>
+    </pre>
+        <hr>
+        <h3>semantic tags</h3>
+        <p>
+            &lt;header&gt; <br>
+            &lt;main&gt; <br>
+            &lt;footer&gt; <br>
+            &lt;section&gt; <br>
+            &lt;article&gt; <br>
+            &lt;aside&gt; <br>
+        </p>
+        <hr>
+        <h3>Div & span tag</h3>
+        <div>i am a div - i'm block element</div>
+        <span>i am a span - i'm inline element</span>
+        <hr>
+        <h3>list tag</h3>
+        <h4>unorederd list</h4>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+        </ul>
+        <h4>ordered list</h4>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+        <hr>
+        <h3>Table tag</h3>
+        <table>
+            <caption>Student information</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Roll NO.</th>
+                    <th>Class</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Saurabh</td>
+                    <td>12</td>
+                    <td>Btech b</td>
+                </tr>
+                <tr>
+                    <td>Lalit</td>
+                    <td>13</td>
+                    <td>Btech b</td>
+                </tr>
+                <tr>
+                    <td>Harshal</td>
+                    <td>14</td>
+                    <td>Btech b</td>
+                </tr>
+                <tr>
+                    <td>Aman</td>
+                    <td>15</td>
+                    <td>Btech c</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total Student -</td>
+                    <td>4</td>
+                </tr>
+            </tfoot>
+        </table>
+        <hr>
+        <h3>form tag</h3>
+        <form action="/action.php">
+            <!-- input text , number, mail  -->
+            <input type="text" placeholder="enter your name"> <br> <br>
+            <input type="email" placeholder="enter your email"> <br> <br>
+            <input type="number" placeholder="enter your number"> <br> <br>
+            <!-- radio buttons -->
+            <label for="id1">
+                <input type="radio" name="class" id="id1" value="class X">Class X
+            </label>
+            <label for="id2">
+                <input type="radio" name="class" id="id2" value="class XII">Class XII
+            </label>
+            <br> <br>
+            <!-- checkbox  -->
+            <label for="web dev">
+                <input type="checkbox" name="intrest" id="web dev" value="web dev">Web dev
+            </label>
+            <label for="app dev">
+                <input type="checkbox" name="intrest" id="app dev" value="app dev">App Dev
+            </label>
+            <br> <br>
+            <!-- dropdown  -->
+            <select name="city" id="city">
+                <option value="Maheshwar">Maheshwar</option>
+                <option value="Indore">Indore</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Jaipur">Jaipur</option>
+            </select>
+            <br> <br>
+            <!-- textarea  -->
+            <textarea name="extra message" id="id4" cols="30" rows="10"></textarea>
+            <br>
+            <!-- submit button -->
+            <input type="submit" value="submit">
+        </form>
+        <hr>
+        <!-- class & id attribute -->
+        <div class="group" id="identity">
+            i am a div
+        </div>
+        <!-- id attribute's value unique for another tag -->
+        <div class="group" id="identity-1">
+            i am another div
+        </div>
+        <hr>
+        <h3>iframe tag</h3>
+        <iframe src="https://en.wikipedia.org/wiki/India" frameborder="0" width="520" height="300px"></iframe>
+        <hr>
+        <h3>Video tag</h3>
+        <video src="Video.mp4" controls width="300px" muted></video>
+        <video src="Video.mp4" controls width="300px" autoplay></video>
+        <video src="Video.mp4" controls width="300px" loop></video>
+        <video src="Video.mp4" controls width="300px" preload="none"></video>
+        <hr>
+        <h3>audio tag</h3>
+        <audio src="song.mp3" controls muted></audio>
+        <audio src="song.mp3" controls loop></audio>
+        <audio src="song.mp3" controls autoplay muted></audio>
+        <audio src="song.mp3" controls preload="metadata"></audio>
+        <hr>
+        <h3>Character entities</h3>
+        <p>less than - &lt;</p>
+        <p>grater tahn - &gt;</p>
+        <p>non braking space - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8 space</p>
+        <p>ampersond - &amp;</p>
+        <p>copyright - &copy;</p>
+        <p>registor trademark - &reg;</p>
+        <hr>
+        <h3>code tag</h3>
+        <code>
+        i am a code my font is diffrent (by default system font)
+     </code>
+        <hr>
+        <h3>Qoutation & Citation tag</h3>
+        <!-- qoutaion tag -->
+        <blockquote cite="https://www.shopify.com/in/blog/motivational-quotes">We cannot solve problems with the kind of
+            thinking we employed when we came up with them.</blockquote>
+        <br>
+        <!-- short qoute -->
+        <q>We cannot solve problems with the kind of thinking we employed when we came up with them.</q>
+        <br>
+        <!-- Citation tags -->
+        <abbr title="Hyper text markup language">HTML</abbr>
+        <br>
+        <pre>
+<address>Suite 769 
+109 Latarsha Canyon, 
+Port Saul, 
+NC 71835-5661</address>
+    </pre>
+    <p>
+
+        i am <cite>a book name</cite>
+    </p>
+    <bdo dir="rtl">i am right to left</bdo>
+    <hr>
+    <h3>Svg  tag</h3>
+    <h4>Circle</h4>
+    <svg width="200" height="200">
+        <Circle cx="100" cy="100" r="80" stroke="red" fill="yellow" stroke-width="4px"></Circle>
+    </svg>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
