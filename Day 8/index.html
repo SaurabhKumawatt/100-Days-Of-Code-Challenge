@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 8 - 100 days of code challenge</title>
+    <style>
+        /* internal css */
+        span{
+            color: yellow;
+            background-color: red;
+        }
+        /* element selectors */
+        h2{
+            color: blue;
+        }
+        /* class selectors */
+        .para{
+            color: blueviolet;
+            font-size: 40px;
+        }
+        /* id selector */
+        #idh2{
+            color: chartreuse;
+        }
+        /* child selector */
+        div > h2{
+            color: chocolate;
+        }
+        /* descendant selectors */
+        span h2{
+            color: pink;
+            background-color: black;
+        }
+        /* universal selector */
+        *{
+            /* margin: 0;
+            padding: 20; */
+            background-color: darkgray;
+        }
+        /* pseudeo selector */
+        a:visited{
+            color: palevioletred;
+        }
+        a:link{
+            color: black;
+        }
+        a:active{
+            color: darkgoldenrod;
+        }
+        ol:hover{
+            color: brown;
+        }
+        p:first-child{
+            background-color: brown;
+        }
+        p:hover{
+            background-color: coral;
+        }
+    </style>
+    <!-- external css add using link tag -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Today i started css</h1>
+        <h3>CSS - Casecanding Style Sheet</h3>
+        <h4>3 ways to add css in html</h4>
+        <ol>
+            <li>Inline CSS</li>
+            <li>Internal CSS</li>
+            <li>External CSS</li>
+        </ol>
+    </div>
+    <div style="color: red;">
+        i am inline css
+    </div>
+    <span>
+        i am  internal css
+    </span>
+    <article>
+        i am external css
+    </article>
+    <h3>CSS selectors</h3>
+    <h2>I am a element selector</h2>
+    <p class="para">i am class selector</p>
+    <h2 id="idh2">i am id selector</h2>
+    <div>
+        <h2>i am child selector</h2>
+    </div>
+    <span>
+        <h2>i am descendant selector</h2>
+    </span>
+    <a href="https://www.google.com">Go To Google</a>
+    <a href="https://www.wikipedia.com">Go To wikipedia</a>
+    <div>
+        <p>i am first child</p>
+        <p>i am second child</p>
+    </div>
+    <span class="hvr">
+        <p>i am first child of span</p>
+    </span>
+    <footer>
+        designe by saurabh Kumawat
+    </footer>
+</body>
+</html>
