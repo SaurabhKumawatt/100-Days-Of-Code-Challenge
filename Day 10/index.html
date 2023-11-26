@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10 - 100 days of code challenge</title>
+    <style>
+        * {
+            color: red;
+        }
+
+        h3 {
+            color: blue;
+        }
+
+        .classsel {
+            color: maroon;
+        }
+
+        #idsel {
+            color: chocolate;
+        }
+
+        .posi {
+            color: green;
+        }
+
+        .posi {
+            color: blue;
+        }
+
+        .imp {
+            color: rgb(255, 136, 0) !important;
+        }
+
+        .text {
+            color: orange;
+            text-decoration: underline;
+            /* text-decoration-style: wavy; */
+            /* text-decoration-style: double; */
+            /* text-decoration-style: dotted; */
+            /* by default solid */
+            text-decoration-style: solid;
+            text-decoration-color: brown;
+            text-decoration-thickness: 4px;
+
+        }
+
+        .indent {
+            text-indent: 40px;
+        }
+
+        .overf {
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            text-overflow: ellipsis;
+            /* overflow: hidden; */
+            overflow: scroll;
+            /* word-break: break-all; */
+
+        }
+        span >h1{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <span>
+        <h1>some font and text practice will be not done</h1>
+        <p class="text">text decoration</p>
+        <p class="indent">text indent</p>
+    </span>
+    <div class="overf">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut neque, quidem dolore explicabo labore
+        consectetur quibusdam atque ad dolores, nemo aperiam eos inventore.
+    </div>
+
+    <h1>CSS Specificity & Cascade</h1>
+    <h1>By position</h1>
+    <p class="posi">first green, second blue - last position apply</p>
+    <h1>by Specificity</h1>
+    <h2>Universal Selector: 0</h2>
+    <h3>Element selectors and pseudo-elements: 1</h3>
+    <h4 class="classsel">Class selectors, attribute selectors, and pseudo-classes: 10</h4>
+    <h5 id="idsel">ID selectors: 100</h5>
+    <h6 style="color: aqua;">Inline styles: 1000</h6>
+    <div class="imp" style="color: rebeccapurple;">
+        important - overlay all Specificity
+    </div>
+</body>
+
+</html>
