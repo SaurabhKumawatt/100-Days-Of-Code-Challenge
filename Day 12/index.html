@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 12 - 100 days of code challenge</title>
+    <style>
+        *{
+            padding: 0;
+        }
+        .box {
+            border: 2px solid black;
+            padding: 20px;
+            /* for outsode shadow  */
+            box-shadow: 5px 5px 4px 1px green;
+            /* for inside shadow */
+            /* box-shadow: 5px 5px 4px 1px green inset; */
+        }
+
+        .text-element {
+            font-size: 50px;
+            text-shadow: 1px 1px 8px #ffa400;
+        }
+
+        .out {
+            outline: 2px solid red;
+            outline-offset: 5px;
+            border: 2px solid black;
+            border-radius: 20px;
+            margin: 20px;
+        }
+
+        .navbar ul li {
+            /* list-style: none; */
+            list-style: disc;
+            list-style-type: "🔥";
+            /* by default list style position outside */
+            list-style-position: inside;
+            /* border: 2px solid black; */
+            /* list-style-image: url(https://cdn-icons-png.flaticon.com/128/25/25694.png); */
+        }
+
+        .over p {
+            width: 30vw;
+            height: 20vh;
+            border: 2px solid red;
+            overflow: hidden;
+            /* overflow-x: auto;
+            overflow-y: scroll; */
+            /* overflow: hidden auto; */
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS shadow and outline</h1>
+    <div class="box">
+        i am box
+    </div>
+    <div class="out">
+        <p class="text-element">
+            Saurabh Kumawat
+        </p>
+    </div>
+    <nav class="navbar">
+        <h2>Styling lists using CSS</h2>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <!-- CSS overflow property  -->
+    <div class="over">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, reiciendis! Commodi aliquid autem consectetur
+            cumque hic voluptas fugit vel aperiam! Possimus, nisi eaque nulla sequi, perspiciatis iste totam praesentium
+            consequuntur culpa exercitationem soluta incidunt corporis, reprehenderit explicabo. Debitis perferendis,
+            ratione voluptate vel quam obcaecati ab?</p>
+    </div>
+</body>
+
+</html>
