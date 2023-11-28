@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 13 - 100 Days Of Code Challenge</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid black;
+            height: 113px;
+            width: 80vw;
+            margin: 10px;
+            padding: 20px;
+        }
+
+        .parent {
+            border: 2px solid black;
+            margin: 10px;
+            padding: 20px;
+            /* position: absolute; */
+            /* transform, filter & perspective property make an element appear as postioned */
+            /* transform: scale(1); */
+            filter: invert(0);
+            /* perspective: 0cap; */
+        }
+
+        .box1 {
+            background-color: blue;
+            /* position: relative;
+                top: 13px;
+                left: 20px; */
+            /* position: sticky;
+            top: 0; */
+        }
+
+        .box2 {
+            background-color: aqua;
+            /* fixed in screen using fixed value  */
+            /* position: fixed; */
+            /* stick in asign postion when scroll using sticky ex,- sticky header  */
+            position: sticky;
+            top: 0;
+
+        }
+
+        .box3 {
+            background-color: chartreuse;
+            /* height: 400vh; */
+        }
+
+        .box4 {
+            background-color: orange;
+            /* nearest position ansister */
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: calc(0);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Position Property </h1>
+    <div class="parent">
+
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    </div>
+</body>
+
+</html>
