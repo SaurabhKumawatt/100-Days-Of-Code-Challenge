@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 14 -- 100 Days of code challenge</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* css variable */
+        :root{
+            /* global variable  */
+            --navcolor: aqua;
+            --container: rgb(147, 255, 255);
+            --navfont: 'Lucida Sans'; 
+        }
+        ul{
+            display: flex;
+            
+        }
+        ul li{
+            list-style: none;
+            padding: 10px;
+        }
+        .nav{
+            /* background-color: aqua; */
+            background-color: var(--navcolor);
+            /* font-family: 'Lucida Sans'; */
+            font-family: var(--navfont);
+
+        }
+        .container{
+            /* background-color: rgb(147, 255, 255); */
+            background-color: var(--container);
+            /* local variable👇 */
+            --navfont: sans-serif;
+            font-family: var(--navfont);
+        }
+        .boxes{
+            display: flex;
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: chocolate;
+            padding: 3px;
+            margin: 3px;
+        }
+        /* for mobile */
+        @media screen and (max-width: 456px){
+            body{
+                background-color: blue;
+            }
+            .box{
+                background-color: aqua;
+                width: 100vw;
+                margin: 10px;
+            }
+            .boxes{
+                display: inline;
+            }
+        }
+        @media screen and (orientation: landscape) {
+            .box{
+                border: 2px solid black;
+            }
+        }
+        /* for tab */
+        @media screen and (min-width: 456px) {
+            body{
+                background-color: red;
+            }
+            .box{
+                background-color: rgb(8, 0, 255);
+            }
+        }
+        /* for desktop */
+        @media screen and (min-width: 768px) {
+            body{
+                background-color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Variable</h1>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, deleniti. Deleniti culpa repellendus ipsam. Rerum dolores pariatur porro exercitationem perspiciatis dolor iusto, dolorum earum autem velit voluptatibus deserunt odio! Molestias nam sed suscipit culpa facere dolor debitis illo laudantium quasi, voluptatum dicta repellendus cum.</p>
+    </div>
+    <h1>CSS Media Queries</h1>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
