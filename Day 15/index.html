@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 15 - 100 Days Of Code Challenge</title>
+    <style>
+        .boxes {
+            border: 2px solid red;
+
+
+        }
+
+        .box {
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+            /* clear: right; */
+            /* clear: left; */
+            /* clear: both; */
+        }
+
+        .boxes img {
+            float: left;
+            /* float: right; */
+
+
+        }
+
+        div {
+            /* If a floated element is taller than the containing element, it will "overflow" outside of its container */
+            display: flow-root;
+            /* overflow: auto; */
+        }
+
+        .line::first-line {
+            background-color: red;
+            color: white;
+        }
+
+        .uni * {
+            /* apply on all element using this selector */
+            background-color: red;
+            color: white;
+            border: 2px solid black;
+            padding: 3px;
+            margin: 3px;
+        }
+
+        /* attribute selector */
+        [data-color="primary"] {
+            background-color: yellow;
+            color: black;
+            border: 2px solid black;
+        }
+
+        [class="attr"] {
+            background-color: blue;
+            color: white;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        /* grouping of selector */
+        div,
+        p,
+        img [data-color="primary"] {
+            /* background-color: aqua; */
+        }
+
+        .even :nth-child(odd) {
+            background-color: red;
+        }
+
+        .even :nth-last-child(2) {
+            background-color: rgb(24, 24, 24);
+            color: white;
+        }
+
+        .even::before {
+            content: "i am before you";
+        }
+
+        .even::after {
+            content: "i am after you ";
+        }
+    </style>
+</head>
+
+<body>
+    <!-- CSS float & clear -->
+    <div class="boxes">
+        <img src="https://img.freepik.com/premium-photo/free-photo-vestrahorn-mountains-stokksnes-iceland_924629-6543.jpg"
+            width="200px" alt="">
+        <div class="box">i am a box</div>
+        <div class="box">i am a box</div>
+        <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et veritatis ipsam totam inventore
+            fugiat a voluptas quasi id adipisci quibusdam delectus dignissimos quae, voluptatum nobis quod fuga tenetur
+            sint! Natus ab quisquam vel ipsum.
+        </div>
+    </div>
+    <!-- CSS Selectors -->
+    <!-- pseudo sel.  - first line  -->
+    <div class="line">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, libero! Suscipit quidem hic tempora cum facilis
+        dolorem expedita iste aperiam laudantium natus obcaecati iusto, illum quisquam rerum doloremque quia non
+        voluptatem eveniet dolor debitis laborum voluptates neque? Earum similique facilis incidunt molestias. Dolorem,
+        nisi autem!
+    </div>
+    <div class="uni">
+        <div>i am a box</div>
+        <div>i am a box</div>
+        <div>i am a box</div>
+    </div>
+    <div class="attr">
+        <!-- attribute Selector -->
+        <div data-color="primary">i am primary box</div>
+        <div>i am box</div>
+        <div>i am box</div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A commodi similique odit error fugit nihil ullam, et,
+        molestias nobis vitae impedit vel laboriosam perspiciatis asperiores in porro, iusto sunt incidunt illum
+        nostrum! Soluta, possimus.</p>
+    <div class="even">
+        <div>i am a box</div>
+        <div>i am a box</div>
+        <div>i am a box</div>
+    </div>
+
+</body>
+
+</html>
