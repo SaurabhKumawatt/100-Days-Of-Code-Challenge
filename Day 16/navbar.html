@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Color Nav Bar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Poppins&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        :root{
+            --bodyColor:rgb(147, 197, 210);
+            --BgColorNan: rgb(0, 200, 255);
+            --color: black;
+            --hoverColor: white;
+            --hoverBgColor:rgb(5, 5, 5);
+        }
+        body{
+            background-color: var(--bodyColor);
+            font-family: 'Baloo 2', sans-serif;
+        }
+        ul{
+            display: flex;
+            color: var(--color);
+        }
+        li{
+            list-style-type: none;
+            margin: 5px;
+        }
+        li a{
+            display: flow-root;
+            padding: 10px;
+            text-decoration: none;
+            color: var(--color);
+        }
+        .navbar{
+            background-color: var(--BgColorNan);
+        }
+        li:hover, a:hover{
+            color: var(--hoverColor);
+            background-color: var(--hoverBgColor);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- multicolor nav bar using variable- like theme -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
