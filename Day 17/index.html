@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 17 - Layout Design</title>
+    <!-- Day 17 - 100 Days Of Code Challenge -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #121113;
+        }
+
+        .head-content {
+            background-color: #ff92ff;
+            position: sticky;
+            top: 0px;
+            z-index: 1;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        .menu li,
+        a {
+            padding: 10px;
+            margin: 10px;
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+            font-weight: 800;
+        }
+
+        .section {
+            width: 1306px;
+            height: 500px;
+            margin: 20px;
+            background-color: #006300;
+            display: flow-root;
+            position: relative;
+        }
+
+        .left {
+            width: 400px;
+            height: 400px;
+            background-color: #FF9193;
+            position: absolute;
+            left: 150px;
+            top: 50px;
+        }
+
+        .right {
+            width: 400px;
+            height: 400px;
+            background-color: #3981E2;
+            position: absolute;
+            top: 50px;
+            right: 150px;
+        }
+
+        .box {
+       
+            width: 1106px;
+            height: 150px;
+            margin: auto;
+            border: 2px solid white;
+            border-radius: 25px;
+            text-align: center;
+            color: white;
+        }
+
+        .box h2 {
+            margin: 65px;
+
+        }
+        .circle{
+            width: 60px;
+            height: 60px;
+            background-color: #D07E26;
+            position: fixed;
+            right: 25px;
+            top: 550px;
+            border-radius: 50%;
+        }
+        .copy{
+            width: 100%;
+            background-color: white;
+            text-align: center;
+            font-size: 25px;
+            margin-top: 200px;
+                
+        }
+        .copy p{
+            padding: 25px;
+        }
+    </style>
+</head>
+
+<body id="top">
+    <!-- layout design given by code with harry on sigma batch excersice 5 here is comment video & 
+    image you can check here -->
+
+    <!-- video :-https://youtu.be/8Hk4MmO9ZeQ?si=xbgfCTMiHiWFuF-q -->
+
+    <!-- Image  -->
+    <!-- uncomment and check -->
+    <!-- <img src="Layout design.png" alt=""> -->
+    <header class="head-content" >
+        <nav class="menu">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <div class="section">
+            <div class="left">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A voluptas minima sequi hic eaque excepturi
+                    ab libero dolor impedit. Quod corporis repellendus exercitationem?</p>
+            </div>
+            <div class="right">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, fuga, velit ex ipsum dolorum optio
+                    cupiditate harum quam amet id placeat eveniet eos est consectetur animi laborum vitae laboriosam
+                    tempore quod deleniti veritatis perspiciatis.</p>
+            </div>
+        </div>
+        <div class="box">
+            <h2>Welcome To 100 Days Of Code Challenge</h2>
+        </div>
+        <a href="#top"><div class="circle"></div></a>
+    </main>
+    <footer class="foot-content">
+        <div class="copy"><p>Designed With ❤️ By Saurabh Kumawat</p></div>
+    </footer>
+</body>
+
+</html>
