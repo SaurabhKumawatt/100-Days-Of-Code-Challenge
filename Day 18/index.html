@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 18 - 100 Days Of Code Challenge</title>
+    <style>
+        .container {
+            width: 100%;
+            height: 50vh;
+            border: 2px solid red;
+            display: flex;
+            /* flex-direction: row; */
+            /* for items align  horizonatal*/
+            justify-content: center;
+            /* for vertical align */
+            align-items: center;
+            /* flex-wrap: wrap; */
+            align-content: center;
+            /* first flex direction second flex wrap value */
+            /* flex-flow: column nowrap; */
+            gap: 20px;
+        }
+
+        .items {
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            /* margin: 10px; */
+
+        }
+
+        .order-1 {
+            flex-grow: 2;
+            /* order property max value in last  */
+            /* by default value 0 */
+            order: 1;
+            align-self: flex-end;
+        }
+
+        .order-2 {
+            /* value*x shrink using flex shrink */
+            flex-shrink: 2;
+            order: 2;
+            align-self: flex-start;
+        }
+
+        .aligns {
+            align-self: flex-start;
+        }
+
+        .aligne {
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS flexbox</h1>
+    <div class="container">
+        <div class="items order-1">1</div>
+        <div class="items aligns"></div>
+        <div class="items"></div>
+        <div class="items aligne"></div>
+        <div class="items order-2">5</div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items">10</div>
+    </div>
+</body>
+
+</html>
