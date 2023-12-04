@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 19 - 100 Days Of Code Challenge</title>
+    <style>
+        .container {
+            width: 80vw;
+            /* height: 80vh; */
+            border: 2px solid #000000;
+            display: grid;
+            /* grid-template-rows: 200px 200px; */
+            grid-template-rows: repeat(4, 1fr);
+            /* grid-template-rows: repeat(4, minmax(10px, 1fr)); */
+            /* grid-template-columns: 200px 200px; */
+            grid-template-columns: "1fr 1fr 1fr";
+            /* grid-template-columns: [first] 200px [second] 200px;
+            grid-template-rows: [first] 200px [second] 200px; */
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+        }
+
+        .item-1 {
+            grid-row: 1/2;
+            grid-column: first/3;
+        }
+
+        .areas {
+            /* margin: 20px; */
+            /* width: 80vw;
+            height: 80vh; */
+            border: 2px solid #000000;
+            display: grid;
+            /* grid-template-rows: 200px 200px;
+            grid-template-columns: 200px 200px; */
+            grid-template-areas: "nav nav nav" "section article side" "footer footer footer";
+            /* grid-template-areas: "nav nav nav"
+                "side article article"
+                "footer footer footer"; */
+        }
+
+        .sec {
+            /* width: 100px; */
+            height: 100px;
+            border: 2px solid red;
+        }
+
+        .nav {
+            grid-area: nav;
+            background-color: aqua;
+        }
+        
+        .section {
+            grid-area: section;
+            background-color: yellow;
+        }
+
+        .article {
+            grid-area: article;
+            background-color: blueviolet;
+        }
+
+        .side {
+            grid-area: side;
+            background-color: chocolate;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Grid</h1>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+    </div>
+    <div class="areas">
+        <div class="sec nav">NavBar</div>
+        <div class="sec section">Section</div>
+        <div class="sec article">Article</div>
+        <div class="sec side">Side</div>
+        <div class="sec footer">Footer</div>
+    </div>
+</body>
+
+</html>
