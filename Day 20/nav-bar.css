@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    height: 100px; 
+    align-items: center;  
+    justify-content: space-around;
+}
+
+.right ul{
+    display: flex;
+    list-style-type: none;
+    gap: 34px;
+}
+.right ul li{
+    font-family: "Segoe UI";
+    
+    display: flex;
+    align-items: center;
+}
+.right a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
