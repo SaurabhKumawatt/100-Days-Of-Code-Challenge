@@ -1,0 +1,31 @@
+.container{
+    width: 80vw;
+    height: 80vh;
+    background-color: blue;
+    position: fixed;
+}
+.ball{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%;
+    animation:animatex 12s linear 1s infinite, animatey 1s ease-out  infinite alternate;
+}
+@keyframes animatex {
+    from{
+        left: 0;
+    }
+    to{
+        left: 100%;
+    }
+}
+@keyframes animatey {
+    from{
+        bottom: 0;
+    }
+    to{
+        bottom: 100%;
+    }
+}

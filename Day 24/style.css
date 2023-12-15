@@ -1,0 +1,39 @@
+.container{
+    width: 500px;
+    /* width: 1500px; */
+    height: 400px;
+    /* background-color: bisque; */
+    border: 2px solid black;
+    background-image: url("https://img.freepik.com/free-photo/photographer-taking-photo-outdoors_1308-41392.jpg");
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-y; */
+    /* background-position: top right; */
+    /* background-position: bottom left; */
+    /* background-clip: padding-box; */
+}
+.container img{
+    width: 500px;
+    height: 400px;
+    /* object-fit: cover; */
+    object-fit: contain;
+    /* object-position: 10px 20px; */
+    /* object-position: top left; */
+    /* object-position: bottom right; */
+}
+.img1{
+    width: 500px;
+    filter: blur(2px);
+}
+.img2{
+    width: 500px;
+    /* filter: invert(1); */
+    filter: brightness(85%) contrast(1) saturate(3); 
+}
+.img3{
+    width: 500px;
+    /* filter: grayscale(100%); */
+    filter: sepia(100%);
+    /* filter: hue-rotate(90deg); */
+    /* filter: drop-shadow(16px 16px 20px red); */
+    /* filter: opacity(50%); */
+}
