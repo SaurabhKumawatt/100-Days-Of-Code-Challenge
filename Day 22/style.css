@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    display: flex;
+    height: 100px; 
+    align-items: center;  
+    justify-content: space-around;
+}
+
+.right ul{
+    display: flex;
+    list-style-type: none;
+    gap: 34px;
+}
+.right ul li{
+    font-family: "Segoe UI";
+    
+    display: flex;
+    align-items: center;
+}
+.right a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+.section{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 50px;
+    
+}
+.section h1{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.3em;
+    padding: 10px;  
+}
+.section img{
+    vertical-align: bottom;
+    margin: 10px !important;
+}
+.section p{
+    font-size: 24px;
+    line-height: 1.3em;
+    padding-bottom: 10px;
+    word-wrap: break-word;
+    width: 65vw;
+    margin: auto;
+}
+.section a{
+    text-decoration: none;
+    color: white;
+    background-color: #09a6bd;
+    padding: 12px 20px;
+    border-radius: 5px;
+    margin-bottom: 70px !important;
+}
+.container1{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    padding: 2% 0;
+}
+.container2{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    padding: 2% 0;
+}
+.container3{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    padding: 2% 0;
+}
+.box1, .box2, .box3{
+    width: 310px;
+    background-color: #f9f9f9;
+    margin-right: 3%;
+    text-align: center;
+    padding: 20px;
+}
+.button{
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+    justify-content: center;
+}
+.button-1 a{
+    padding: 8px 15px;
+    text-decoration: none;
+    background-color: #00b6d1;
+    font-size: 12px;
+    margin: 0 4px 5px;
+    color: white;
+    border-radius: 5px;
+    font-weight:bold;
+}
+.button-2 a{
+    padding: 8px 15px;
+    text-decoration: none;
+    background-color: #5cb85c;
+    font-size: 12px;
+    margin: 0 4px 5px;
+    color: white;
+    border-radius: 5px;
+    font-weight:bold;
+}
+.text{
+    min-height: 61px;
+    padding-bottom: 12px;
+    margin-bottom: 4.787%;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.3em;
+}
+.text p{
+    
+}
