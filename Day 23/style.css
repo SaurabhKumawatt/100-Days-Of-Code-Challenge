@@ -1,0 +1,27 @@
+div{
+    width: 50vw;
+    height: 40vh;
+    background-color: aqua;
+}
+div p{
+    /* animation: slide;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0, 0.96, 1, 1);
+    animation-delay: 2S; */
+    /* animation-direction: rev erse; */
+    /* animation-play-state: paused; */
+    /* animation-fill-mode: backwards; */
+    display: inline-block;
+    animation: slide 4s cubic-bezier(0, 0.96, 1, 1) 2s infinite reverse;
+}
+@keyframes slide {
+    from{
+
+    }
+    to{
+        transform: translate(500%);
+        font-size: 25px;
+        background-color: red;
+    }
+}
