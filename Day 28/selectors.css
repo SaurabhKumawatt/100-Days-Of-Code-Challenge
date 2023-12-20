@@ -1,0 +1,100 @@
+/* i am universal selector */
+*{
+    margin: 10px;
+    padding: 10px;
+}
+p{
+    background-color: red;
+    width: 30vw;
+    height: 20vh;
+}
+.cls{
+    background-color: red;
+    width: 30vw;
+    height: 20vh;
+}
+#idd{
+    background-color: red;
+    width: 30vw;
+    height: 20vh;
+}
+div > p{
+    background-color: rgb(202, 6, 252);
+    width: 30vw;
+    height: 20vh;
+}
+.child :first-child{
+    background-color: red;
+
+}
+.child :nth-child(2){
+    background-color: pink;
+}
+.descendent div{
+    background-color: chocolate;
+    width: 30vw;
+    height: 20vh;
+}
+.efx{
+    background-color: orangered;
+    width: 30vw;
+    height: 20vh;
+
+}
+.efx:hover{
+    background-color: red;
+}
+.anchortag a:link{
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+.anchortag a:hover{
+    color: red;
+    background-color: black;
+}
+.anchortag a:active{
+    color: rgb(0, 0, 0);
+}
+.fst-line::first-line{
+    color: red;
+}
+.uni *{
+    /* universal element selector */
+    background-color: rgb(4, 0, 255);
+    width: 20vw;
+    height: 20vh;
+    color: white;
+    margin: 30px;
+}
+[class="atr"]{
+    /* i am attributr selector */
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+    width: 20vw;
+    height: 20vh;
+    margin: 30px;
+}
+span, h1, [class="grp"]{
+    color: red;
+    font-size: 30px;
+    font-weight: 400;
+    background-color: yellow;
+    margin: 30px;
+}
+.even :nth-child(odd){
+    background-color: red;
+}
+.even :nth-child(even){
+    background-color: rgb(0, 38, 255);
+}
+.last-child :nth-last-child(1){
+    background-color: red;
+}
+.aft-bfr::before{
+    content: "i am before heading";
+    color: rgb(255, 0, 0);
+}
+.aft-bfr::after{
+    content: "i am after heading";
+    color: rgb(0, 255, 13);
+}

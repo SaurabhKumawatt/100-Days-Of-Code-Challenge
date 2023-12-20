@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positio9n Property</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            width: 100vw;
+            height: 100%;
+            position: relative;
+        }
+        .box{
+            width: 500px;
+            height: 200px;
+            border: 2px solid red;
+            margin: 10px auto;
+        }
+        .box1{
+            background-color: aqua;
+            position: absolute;
+            top: 210px;
+            left: 10px;
+            /* z-index: -1; */
+        }
+        .box2{
+            background-color: blue;
+            position: sticky;
+            top: 0;
+        }
+        .box3{
+            background-color: yellow;
+        }
+        .box4{
+            background-color: pink;
+            height: 800px;
+        }
+        .circle{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+            position: fixed;
+            bottom: 5px;
+            right: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body id="up">
+    <div class="container">
+
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <a href="#up">
+            <div class="circle"><img src="up-arrow.svg" alt=""></div>
+        </a>
+    </div>
+</body>
+</html>

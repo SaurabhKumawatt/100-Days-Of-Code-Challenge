@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Font, text & color property</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Poppins&display=swap');
+
+        div>p {
+            font-size: 30px;
+            font-weight: bold;
+            /* font-family: sans-serif; */
+            font-family: 'Baloo Bhai 2', sans-serif;
+            /* font-family: 'Poppins', sans-serif; */
+            font-style: italic;
+            line-height: 50px;
+            letter-spacing: 3px;
+            text-transform: capitalize;
+            /* text-transform: uppercase; */
+            /* text-transform: lowercase; */
+            text-decoration: underline;
+            text-decoration-color: red;
+            text-decoration-style: dashed;
+            text-decoration-thickness: 10px;
+        }
+        div > h3{
+            text-indent: 30%;
+        }
+        span > p{
+            width: 500px;
+            height: 100px;
+            border: 2px solid red;
+            text-overflow: ellipsis;
+            overflow: scroll;
+            word-break: break-all;
+        }
+        .name{
+            background-color: red;
+            color: white;
+        }
+        .rgb{
+            background-color: rgb(8, 252, 0);
+            color: rgb(0, 0, 0);
+        }
+        .rgba{
+            background-color: rgba(252, 0, 0, 0.3);
+            color: rgba(0, 0, 0, 0.5);
+        }
+        .hex{
+            background-color: #4ab4fe;
+            color: #000000;
+        }
+        .hsl{
+            background-color: hsl(0, 0%, 0%);
+            color: hsl(0, 0%, 100%);
+        }
+        .hsla{
+            background-color: hsla(0, 0%, 0%, 0.5);
+            color: hsla(0, 0%, 100%, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae dolores et!</p>
+        <h3>text indent </h3>
+    </div>
+    <span class="ovr">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et nesciunt ad non odit repellat officiis, possimus eius obcaecati vel, aut sequi similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptas eaque suscipit? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore assumenda illo, cumque iure unde ad distinctio culpa veniam, dolore dolor aspernatur. Exercitationem, ipsa deserunt obcaecati dolorum, amet corrupti officia facilis repellendus quia nostrum natus quibusdam dignissimos nemo culpa vitae, fugit distinctio. Mollitia culpa at corrupti ex quia temporibus quidem, fuga molestiae perferendis? Unde, in possimus.</p>
+    </span>
+    <ul>
+        <li class="name">i am color</li>
+        <li class="rgb">i am rgb color</li>
+        <li class="rgba">i am rgba color</li>
+        <li class="hex">i am hex color</li>
+        <li class="hsl">i am hsl color</li>
+        <li class="hsla">i am hsla color</li>
+    </ul>
+</body>
+
+</html>

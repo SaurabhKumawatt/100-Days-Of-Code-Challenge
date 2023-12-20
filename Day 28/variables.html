@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable & Media Queries</title>
+    <style>
+        /* defined variable using root  */
+        :root {
+            --color: rgb(255, 0, 0);
+            --font-sz: 48px;
+            --bg-color: yellow;
+            --hvr-color: rgb(255, 255, 132);
+            --padd: 0px 20px;
+            --mob-color: yellow;
+            --mob-bg-color: red;
+            --mob-hvr-color: rgb(255, 132, 132);
+
+        }
+
+        ul li {
+            color: var(--color);
+            background-color: var(--bg-color);
+        }
+
+        button {
+            color: var(--color);
+            background-color: var(--bg-color);
+            font-size: var(--font-sz);
+            padding: var(--padd);
+            border: 2px solid red;
+            border-radius: 25px;
+            margin: 10px;
+        }
+
+        button:hover {
+            background-color: var(--hvr-color);
+            cursor: pointer;
+        }
+
+        @media screen and (max-width : 425px) {
+            /* for mobile  */
+            body {
+
+                background-color: pink;
+            }
+
+            button {
+                color: var(--mob-color);
+                background-color: var(--mob-bg-color);
+                font-size: var(--font-sz);
+                padding: var(--padd);
+                border: 2px solid yellow;
+                border-radius: 25px;
+                margin: 10px;
+            }
+
+            button:hover {
+                color: red;
+                background-color: var(--mob-hvr-color);
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="button">
+        <button>Home</button>
+        <button>About</button>
+        <button>Contact</button>
+    </div>
+</body>
+
+</html>
