@@ -1,0 +1,59 @@
+body {
+    font-family: Times, serif;
+    background-color: black;
+}
+header{
+    margin: 50px;
+}
+header h1 {
+    text-align: center;
+    color: white;
+}
+
+header p {
+    text-align: center;
+    color: white;
+}
+
+.tribute {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 90vw;
+    margin: auto;
+}
+
+.tribute blockquote {
+    font-size: 48px;
+    text-align: center;
+}
+
+.bio {
+    width: 40vw;
+    margin: auto;
+    color: white;
+}
+
+.bio h2 {
+    font-size: 3rem;
+}
+
+.bio p {
+
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+.line{
+    height:2px;
+    background-color: white;
+    width: 40vw;
+    margin: auto;
+}
+footer {
+    margin: 40px;
+}
+footer p{
+    color: white;
+    text-align: center;
+}
