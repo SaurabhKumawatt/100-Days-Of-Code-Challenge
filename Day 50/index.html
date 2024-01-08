@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 50 - 100 Days Of Code Challenge</title>
+    <style>
+        .project-1{
+            width: 300px;
+            height: 30px;
+            background-color: #fff;
+            padding: 5px;
+            text-align: center;
+            border-radius: 20px;
+            padding-bottom: 10px;
+        }
+        .project-1 a{
+            text-decoration: none;
+            color: #000000;
+            font-size: 25px;
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body style="color: white; background-color: #212121;">
+    <h1>Day 50 - 100 Days Of Code Challenge 🎉</h1>
+
+    <!-- edit and remove element -->
+    <ul class="lang">
+        <li>HTML</li>
+    </ul>
+
+    <div class="project-1">
+       <a href="Project 1.html">Color Changer 🔥</a>
+    </div>
+</body>
+<script>
+    // non optimize way
+    function addLangN(langName){
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+        document.querySelector('li').appendChild(li)
+    }
+    //addLangN('Tailwind CSS')
+    // optimize way
+    function addLang(langName) {
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.lang').appendChild(li)
+    }
+    addLang("CSS")
+    addLang("JavaScript")
+
+    // edit element 
+    // not good approch
+    const editLang = document.querySelector('li:nth-child(2)')
+    editLang.innerHTML = "Tailwind CSS"
+
+    // optimize way
+    const changeLang = document.querySelector('li:nth-child(2)')
+    // console.log(changeLang);
+    const newLi = document.createElement('li')
+    newLi.textContent = "CSS"
+    changeLang.replaceWith(newLi)
+
+    //edit -- Using outer html
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.outerHTML = '<li>TypeScript</li>'
+
+    // remove element
+    const lastli = document.querySelector('li:last-child')
+    lastli.remove()
+
+</script>
+
+</html>

@@ -1,0 +1,28 @@
+body{
+    margin: 100px auto 100px;
+    padding: 0;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+span {
+    display: block;
+}
+.button{
+    width: 124px;
+    height: 124px;
+    display: inline-block;
+    border: 2px solid black;
+    cursor: pointer;
+}
+#white{
+    background-color: white;
+}
+#red{
+    background-color: red;
+}
+#green{
+    background-color: green;
+}
+#blue{
+    background-color: blue;
+}
