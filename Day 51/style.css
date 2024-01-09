@@ -18,7 +18,7 @@ body {
     max-width: 788px;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 20px auto;
     gap: 20px;
 }
 
