@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: #212121;
+    color: white;
+}
+.container{
+    width: 50vw;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.banner{
+    font-size: 30px;
+
+}
+#clock{
+    font-size: 45px;
+    width: 250px;
+    height: 56px;
+    text-align: center;
+    background-color: #0c57f3;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
