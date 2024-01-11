@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: white;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+}
+
+header {
+    padding: 20px 20px 0px 20px;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: calc(100% - 24px);
+    max-width: 788px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 12px auto;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 55px;
+    padding: 12px;
+    backdrop-filter: blur(10px);
+}
+.hide {
+    opacity:0;
+   
+}
+.show {
+    opacity:1;
+  
+}
+.nav-avtar{
+    width: 44px;
+    height: 44px;
+    /* margin: auto; */
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: contain;
+}
+.nav-avtar img{
+    height: 100%;
+}
+.username{
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #000000;
+    font-weight: 700;
+}
+.share-btn{
+    width: 44px;
+    height: 44px;
+    border-radius: 24px;
+    background-color: white;
+    justify-self: end;
+    text-align: center;
+    padding: 9px;
+}
+
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 788px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.img{
+    width: 96px;
+    height: 96px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: contain;
+}
+.img img{
+    height: 100%;
+}
+
+.title h1 {
+    /* font-size: 20px; */
+    font-size: 1.25rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px;
+}
+
+.social-btn-icon svg {
+    /* display: inline-block; */
+    width: 44px;
+    margin: 7px;
+    
+}
+.social-btn-icon svg:hover {
+    transform: scale(105%);
+    transition: transform 0.15s cubic-bezier(0, 0.2, 0.5, 3) 0s;
+    transition-duration: 0.15s;
+    transition-timing-function: cubic-bezier(0, 0.2, 0.5, 3);
+    transition-delay: 0s;
+    transition-property: transform;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.header-title{
+    font-size: 16px;
+    margin: 20px;
+    font-weight: 700;
+}
+
+.tiles {
+    max-width: 688px;
+    width: 100%;
+    min-height: 55px;
+    margin: 8px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    border-radius: 13px;
+    cursor: pointer;
+    text-align: center;
+    padding: 8px 6px;
+    
+}
+.tiles a{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.tiles:hover{
+    transform: scale(103%);
+    transition: transform 0.15s cubic-bezier(0, 0.2, 0.5, 3) 0s;
+    transition-duration: 0.15s;
+    transition-timing-function: cubic-bezier(0, 0.2, 0.5, 3);
+    transition-delay: 0s;
+    transition-property: transform;
+    /* transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
+}
+.icon svg{
+    vertical-align: middle;
+    width: 40px;
+}
+.link-share-btn svg {
+    width: 44px;
+    vertical-align: middle;
+}
+
+.text {
+    font-size: 20px;
+}
+.credit{
+    max-width: 301px;
+    min-height: 48px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    margin: 30px auto;
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+}
