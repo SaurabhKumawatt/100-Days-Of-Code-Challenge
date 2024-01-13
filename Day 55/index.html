@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 55 - 100 Days Of Code Challenge</title>
+
+</head>
+
+<body style="background-color: #212121; color: #fff;">
+    <!-- // setTimout and setInterval -->
+    <h1>Day 1 - 100 Days Of Code Chaallenge</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // set timeout and clear time out
+    const changeText = function () {
+        document.querySelector('h1').innerHTML = 'Day 55 - 100 Days Of Code Chaallenge'
+    }
+    let stopTimeout = setTimeout(changeText, 2000)
+    document.querySelector('#stop').addEventListener('click', function () {
+        clearTimeout(stopTimeout)
+    })
+
+
+    // set interval and clear interval
+    // const sayDate = function(){
+    //     console.log(Date.now());
+    // }
+    // const intervalId = setInterval(sayDate, 1000)
+
+    // document.querySelector('#stop').addEventListener('click', function(){
+    //     clearInterval(intervalId)
+    // })
+    
+</script>
+
+</html>
