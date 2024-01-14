@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.avtar{
+    width: 200px;
+    border: 2px solid red;
+    border-radius: 50%;
+}
+#name{
+    font-size: 25px;
+}
