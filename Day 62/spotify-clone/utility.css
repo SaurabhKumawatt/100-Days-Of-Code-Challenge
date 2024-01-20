@@ -1,0 +1,20 @@
+.flex{
+    display: flex;
+}
+.bg-black{
+    background-color: #000000;
+    color: #fff;
+}
+
+.bg-grey{
+    background-color: #121212;
+}
+.rounded{
+    border-radius: 8px;
+}
+.m-1{
+    margin: 10px;
+}
+.p-1{
+    padding: 0;
+}
