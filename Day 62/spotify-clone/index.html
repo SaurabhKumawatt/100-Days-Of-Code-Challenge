@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify-Clone</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utility.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <div class="container bg-black">
         <div class="left">
@@ -24,33 +27,127 @@
                     <div class="playlist">
                         <img src="./assets/playlist.svg" alt="">
                         <h2>You Library</h2>
-                        <img src="./assets/plus.svg" alt="">
+                        <!-- <img src="./assets/plus.svg" alt=""> -->
+                        <div class="songlist">
+                            <ul>
+                                <li>
+                                    <img class="invert" width="34" src="./assets/music.svg" alt="">
+                                    <div class="info">
+                                        <div>Name</div>
+                                        <div>Saurabh</div>
+                                    </div>
+                                    <div class="playnow">
+                                        <span>Play Now</span>
+                                        <img class="invert" src="./assets/play.svg" alt="">
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="library-footer">
                     <div class="bottem-links">
-                        <div><a href="https://www.spotify.com/in-en/legal/" data-encore-id="textLink"><span data-encore-id="type">Legal</span></a></div>
-                        <div><a href="https://www.spotify.com/in-en/privacy/"data-encore-id="textLink"><span data-encore-id="type">Privacy Center</span></a></div>
-                        <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/" data-encore-id="textLink"><span data-encore-id="type">Privacy Policy</span></a></div>
-                        <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"  data-encore-id="textLink"><span data-encore-id="type">Cookies</span></a></div>
-                        <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3" data-encore-id="textLink"><span data-encore-id="type">About Ads</span></a></div>
-                        <div><a href="https://www.spotify.com/in-en/accessibility/"  data-encore-id="textLink"><span data-encore-id="type">Accessibility</span></a></div>
-                      </div>
+                        <div><a href="https://www.spotify.com/in-en/legal/" data-encore-id="textLink"><span
+                                    data-encore-id="type">Legal</span></a></div>
+                        <div><a href="https://www.spotify.com/in-en/privacy/" data-encore-id="textLink"><span
+                                    data-encore-id="type">Privacy Center</span></a></div>
+                        <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"
+                                data-encore-id="textLink"><span data-encore-id="type">Privacy Policy</span></a></div>
+                        <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"
+                                data-encore-id="textLink"><span data-encore-id="type">Cookies</span></a></div>
+                        <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"
+                                data-encore-id="textLink"><span data-encore-id="type">About Ads</span></a></div>
+                        <div><a href="https://www.spotify.com/in-en/accessibility/" data-encore-id="textLink"><span
+                                    data-encore-id="type">Accessibility</span></a></div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="right rounded bg-grey m-1">
-            <div class="right-header">
+            <div class="rightHeader">
                 <div class="nav">
-                    <svg width="16px" fill="white" data-encore-id="icon" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 cAMMLk IYDlXmBmmUKHveMzIPCF" viewBox="0 0 16 16"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0z"></path></svg>
-                    <svg width="16px" fill="white" data-encore-id="icon" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 cAMMLk IYDlXmBmmUKHveMzIPCF" viewBox="0 0 16 16"><path d="M4.97.47a.75.75 0 0 0 0 1.06L11.44 8l-6.47 6.47a.75.75 0 1 0 1.06 1.06L13.56 8 6.03.47a.75.75 0 0 0-1.06 0z"></path></svg>
+                    <svg width="16px" fill="white" data-encore-id="icon" role="img" aria-hidden="true"
+                        class="Svg-sc-ytk21e-0 cAMMLk IYDlXmBmmUKHveMzIPCF" viewBox="0 0 16 16">
+                        <path
+                            d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0z">
+                        </path>
+                    </svg>
+                    <svg width="16px" fill="white" data-encore-id="icon" role="img" aria-hidden="true"
+                        class="Svg-sc-ytk21e-0 cAMMLk IYDlXmBmmUKHveMzIPCF" viewBox="0 0 16 16">
+                        <path
+                            d="M4.97.47a.75.75 0 0 0 0 1.06L11.44 8l-6.47 6.47a.75.75 0 1 0 1.06 1.06L13.56 8 6.03.47a.75.75 0 0 0-1.06 0z">
+                        </path>
+                    </svg>
                 </div>
                 <div class="buttons">
-                    <button>Sign up</button>
-                    <button>Login</button>
+                    <button class="signUp">Sign up</button>
+                    <button class="logIn">Log in</button>
+                </div>
+            </div>
+            <div class="playlistCards">
+                <div class="card">
+                    <img src="./assets/images/playlist1.jpg" alt="">
+                    <h2>Sleep</h2>
+                    <p>Gentle Ambient piano to help you fall asleep. </p>
+                    <div class="playbtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            class="injected-svg" data-src="/icons/play-circle-stroke-rounded.svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#000000">
+                            <circle cx="12" cy="12" r="10" stroke="#1ed760" stroke-width="1.5" fill="#1ed760"></circle>
+                            <path fill="" black
+                                d="M15.4531 12.3948C15.3016 13.0215 14.5857 13.4644 13.1539 14.3502C11.7697 15.2064 11.0777 15.6346 10.5199 15.4625C10.2893 15.3913 10.0793 15.2562 9.90982 15.07C9.5 14.6198 9.5 13.7465 9.5 12C9.5 10.2535 9.5 9.38018 9.90982 8.92995C10.0793 8.74381 10.2893 8.60868 10.5199 8.53753C11.0777 8.36544 11.7697 8.79357 13.1539 9.64983C14.5857 10.5356 15.3016 10.9785 15.4531 11.6052C15.5156 11.8639 15.5156 12.1361 15.4531 12.3948Z"
+                                stroke="#000000" stroke-width="1.5" stroke-linejoin="round" fill="green"></path>
+                        </svg>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/images/playlist1.jpg" alt="">
+                    <h2>Sleep</h2>
+                    <p>Gentle Ambient piano to help you fall asleep. </p>
+                    <div class="playbtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            class="injected-svg" data-src="/icons/play-circle-stroke-rounded.svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#000000">
+                            <circle cx="12" cy="12" r="10" stroke="#1ed760" stroke-width="1.5" fill="#1ed760"></circle>
+                            <path fill="" black
+                                d="M15.4531 12.3948C15.3016 13.0215 14.5857 13.4644 13.1539 14.3502C11.7697 15.2064 11.0777 15.6346 10.5199 15.4625C10.2893 15.3913 10.0793 15.2562 9.90982 15.07C9.5 14.6198 9.5 13.7465 9.5 12C9.5 10.2535 9.5 9.38018 9.90982 8.92995C10.0793 8.74381 10.2893 8.60868 10.5199 8.53753C11.0777 8.36544 11.7697 8.79357 13.1539 9.64983C14.5857 10.5356 15.3016 10.9785 15.4531 11.6052C15.5156 11.8639 15.5156 12.1361 15.4531 12.3948Z"
+                                stroke="#000000" stroke-width="1.5" stroke-linejoin="round" fill="green"></path>
+                        </svg>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+            </div>
+            <div class="playbar">
+                <div class="seekbar">
+                    <div class="circle"></div>
+                </div>
+                <div class="abovebar">
+                    <div class="songinfo">
+                        <div>Song Name</div>
+                        <div>Saurabh</div>
+                    </div>
+                    <div class="songbuttons invert">
+                        <img width="35" id="previous" src="./assets/previous.svg" alt="">
+                        <img width="35" id="play" src="./assets/play.svg" alt="">
+                        <img width="35" id="next" src="./assets/next.svg" alt="">
+                    </div>
+                    <div class="songtime">
+                        0:01 / 3:42
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
+<script src="script.js"></script>
+
 </html>
