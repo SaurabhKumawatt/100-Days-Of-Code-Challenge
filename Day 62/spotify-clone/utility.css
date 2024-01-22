@@ -30,11 +30,12 @@
 
 /* Style the horizontal scroll bar */
 ::-webkit-scrollbar {
-    height: 12px;
+    height: 52px;
+    width: 5px;
   }
   
   ::-webkit-scrollbar-thumb {
-    background-color: black;
+    background-color: grey;
     /* border-radius: 6px; */
   }
   

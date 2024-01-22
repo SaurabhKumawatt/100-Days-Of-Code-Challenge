@@ -103,7 +103,7 @@ body {
     color: grey;
     text-decoration: none;
     font-size: 11px;
-    padding: 0 24px;
+    /* padding: 0 24px; */
     margin-right: 16px;
 
 }
@@ -233,7 +233,7 @@ body {
 }
 .seekbar{
     box-sizing: border-box;
-    width: 90%;
+    width: 100%;
     margin: auto;
     height: 2px;
     border: 2px solid white;
@@ -248,14 +248,17 @@ body {
     background-color: #1ed760;
     position: relative;
     bottom: 6px;
-    left: 0%;
+    left: -0.5%;
     transition: all .5s;
     cursor: pointer;
 }
 .abovebar{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
     align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.songtime{
+    justify-self: end;
 }
 .songbuttons{
     display: flex;
@@ -267,24 +270,33 @@ body {
 .songbuttons > *{
     cursor: pointer;
 }
+.songlist{
+    height: 271px;
+    overflow: auto;
+}
 .songlist ul{
     padding: 0 12px;
 }
 .songlist ul li{
     list-style-type: decimal;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 25px 1fr 25px;
     align-items: center;
     gap: 12px;
     cursor: pointer;
-    padding: 12px 0;
     border: 1px solid rgba(146, 143, 143, 0.491);
     margin: 12px 0;
     padding: 13px;
     border-radius: 5px;
 }
+.info{
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
 .info div {
-    word-break: break-all;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
 }
 .playnow {
     display: flex;
