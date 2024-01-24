@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify-Clone</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utility.css">
-    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -81,39 +81,7 @@
                 </div>
             </div>
             <div class="playlistCards">
-                <div class="card">
-                    <img src="./assets/images/playlist1.jpg" alt="">
-                    <h2>Sleep</h2>
-                    <p>Gentle Ambient piano to help you fall asleep. </p>
-                    <div class="playbtn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            class="injected-svg" data-src="/icons/play-circle-stroke-rounded.svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#000000">
-                            <circle cx="12" cy="12" r="10" stroke="#1ed760" stroke-width="1.5" fill="#1ed760"></circle>
-                            <path fill="" black
-                                d="M15.4531 12.3948C15.3016 13.0215 14.5857 13.4644 13.1539 14.3502C11.7697 15.2064 11.0777 15.6346 10.5199 15.4625C10.2893 15.3913 10.0793 15.2562 9.90982 15.07C9.5 14.6198 9.5 13.7465 9.5 12C9.5 10.2535 9.5 9.38018 9.90982 8.92995C10.0793 8.74381 10.2893 8.60868 10.5199 8.53753C11.0777 8.36544 11.7697 8.79357 13.1539 9.64983C14.5857 10.5356 15.3016 10.9785 15.4531 11.6052C15.5156 11.8639 15.5156 12.1361 15.4531 12.3948Z"
-                                stroke="#000000" stroke-width="1.5" stroke-linejoin="round" fill="green"></path>
-                        </svg>
-
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./assets/images/playlist1.jpg" alt="">
-                    <h2>Sleep</h2>
-                    <p>Gentle Ambient piano to help you fall asleep. </p>
-                    <div class="playbtn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            class="injected-svg" data-src="/icons/play-circle-stroke-rounded.svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#000000">
-                            <circle cx="12" cy="12" r="10" stroke="#1ed760" stroke-width="1.5" fill="#1ed760"></circle>
-                            <path fill="" black
-                                d="M15.4531 12.3948C15.3016 13.0215 14.5857 13.4644 13.1539 14.3502C11.7697 15.2064 11.0777 15.6346 10.5199 15.4625C10.2893 15.3913 10.0793 15.2562 9.90982 15.07C9.5 14.6198 9.5 13.7465 9.5 12C9.5 10.2535 9.5 9.38018 9.90982 8.92995C10.0793 8.74381 10.2893 8.60868 10.5199 8.53753C11.0777 8.36544 11.7697 8.79357 13.1539 9.64983C14.5857 10.5356 15.3016 10.9785 15.4531 11.6052C15.5156 11.8639 15.5156 12.1361 15.4531 12.3948Z"
-                                stroke="#000000" stroke-width="1.5" stroke-linejoin="round" fill="green"></path>
-                        </svg>
-
-                    </div>
-                </div>
-
+                
 
 
 
@@ -136,20 +104,21 @@
                     <div class="songtime">
                         0:01 / 3:42
                     </div>
+                    <div class="volume">
+                        <img id="volume" width="25" src="./assets/volume.svg" alt="">
+                        <div class="range">
+                            <input type="range" name="volume" id="">
+                        </div>
+                    </div>
                 </div>
                 <div class="seekbar">
                     <div class="circle"></div>
                 </div>
-                <div class="volume">
-                    <img id="volume" width="25" src="./assets/volume.svg" alt="">
-                    <div class="range">
-                        <input type="range" name="volume" id="">
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>
 </body>
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 </html>

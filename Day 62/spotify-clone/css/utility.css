@@ -1,0 +1,44 @@
+.flex{
+    display: flex;
+}
+.justify-content{
+    justify-content: center;
+}
+.bg-black{
+    background-color: #000000;
+    color: #fff;
+}
+
+.bg-grey{
+    background-color: #121212;
+}
+.rounded{
+    border-radius: 8px;
+}
+.m-1{
+    margin: 10px;
+}
+.p-1{
+    padding: 0;
+}
+.border{
+    border: 2px solid red;
+}
+.invert{
+    filter: invert(1);
+}
+
+/* Style the horizontal scroll bar */
+::-webkit-scrollbar {
+    height: 52px;
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: grey;
+    /* border-radius: 6px; */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #121212;
+  }
