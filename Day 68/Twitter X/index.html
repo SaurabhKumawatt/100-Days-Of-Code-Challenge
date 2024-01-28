@@ -12,8 +12,8 @@
 </head>
 
 <body class="bg-black text-white">
-    <div class="container flex w-[90%]  m-auto">
-        <div class="left sticky top-0 container w-[50%] h-screen px-5 border-r-[1px]">
+    <div class="container flex m-auto">
+        <div class="left sticky top-0 w-[40%] h-screen px-5 border-r-[1px] border-gray-500">
             <div class="logo w-fit p-3 hover:bg-[#e7e9ea1a] hover:rounded-full hover:cursor-pointer">
                 <svg viewBox="0 0 24 24" aria-hidden="true"
                     class="invert w-7 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1nao33i r-16y2uox r-lwhw9o">
@@ -97,7 +97,7 @@
                     <span class="material-symbols-outlined">settings</span>
                 </div>
             </div>
-            <div class="post-box">
+            <div class="post-box border-b-[1px] border-gray-500">
                 <div class="post flex gap-4 m-5 items-center">
 
                     <div class="img">
@@ -113,33 +113,68 @@
                     <div class="attachment flex items-center">
 
                         <span
-                        class="material-symbols-outlined p-3 hover:bg-[#1d9bf01a] hover:rounded-full cursor-pointer">image</span>
+                            class="material-symbols-outlined p-3 hover:bg-[#1d9bf01a] hover:rounded-full cursor-pointer">image</span>
                         <span
-                        class="material-symbols-outlined p-3 hover:bg-[#1d9bf01a] hover:rounded-full cursor-pointer">gif_box</span>
-                    <span
-                        class="material-symbols-outlined p-3 hover:bg-[#1d9bf01a] hover:rounded-full cursor-pointer">checklist</span>
-                    <span
-                    class="material-symbols-outlined p-3 hover:bg-[#1d9bf01a] hover:rounded-full cursor-pointer">mood</span>
-                    <span
-                        class="material-symbols-outlined p-3 hover:bg-[#1d9bf01a] hover:rounded-full cursor-pointer">calendar_clock</span>
-                    <span
-                        class="material-symbols-outlined p-3 hover:bg-[#1d9bf01a] hover:rounded-full cursor-pointer">location_on</span>
+                            class="material-symbols-outlined p-3 hover:bg-[#1d9bf01a] hover:rounded-full cursor-pointer">gif_box</span>
+                        <span
+                            class="material-symbols-outlined p-3 hover:bg-[#1d9bf01a] hover:rounded-full cursor-pointer">checklist</span>
+                        <span
+                            class="material-symbols-outlined p-3 hover:bg-[#1d9bf01a] hover:rounded-full cursor-pointer">mood</span>
+                        <span
+                            class="material-symbols-outlined p-3 hover:bg-[#1d9bf01a] hover:rounded-full cursor-pointer">calendar_clock</span>
+                        <span
+                            class="material-symbols-outlined p-3 hover:bg-[#1d9bf01a] hover:rounded-full cursor-pointer">location_on</span>
                     </div>
-                    <div class="post-btn">
+                    <div class="post-btn px-5 py-1 bg-[#1d9bf0] text-white font-bold rounded-full mr-5">
                         <button>Post</button>
                     </div>
                 </div>
             </div>
+            <div class="feed">
+                <div class="post">
+                    <div class="post-user flex justify-start gap-3 items-center px-4 py-3 hover:bg-[#ffffff08] hover:cursor-pointer">
+                        <div class="img">
+                            <img class="w-11 rounded-full"
+                                src="https://pbs.twimg.com/profile_images/1683325380441128960/yRsRRjGO_200x200.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <div class="user-info flex justify-between items-center">
+                                <div class="user-info flex gap-2">
+                                <span class="name flex items-center gap-2 hover:underline">
+                                    Elon Musk <span><img src="./assets/img/verify.svg" alt="" class="w-[20px]"></span>
+                            </span>
+                            <span class="username text-[#71767b]">
+                                @elonmusk
+                            </span>
+                            <span class="time text-[#71767b]">
+                                · 2h
+                            </span>
+                        </div>
+                        <div class="more ml-auto hover:bg-[#1d9bf01a] rounded-full ">
+                            <span class="material-symbols-outlined h-9 w-9 items-center py-1 text-center">
+                                more_horiz
+                            </span>
+                        </div>
+                    </div>
+                    <div class="post-desc">
+                        Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
+                        
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="right w-[50%] bg-black border-l ">
-            <div
-                class="search-box  cursor-pointer w-[90%] bg-[#202327] overflow-hidden rounded-full flex items-center mx-auto my-3">
+        <div class="right w-[65%] bg-black border-l border-gray-500">
+            <div class="right-nav w-full sticky top-0 py-1 h-[48px] bg-black z-10">
+                <div class="search-box  cursor-pointer w-[90%] bg-[#202327] overflow-hidden rounded-full flex items-center mx-auto ">
                 <label for="search">
                     <span class="material-symbols-outlined p-2">search</span>
                 </label>
                 <input id="search" type="text" placeholder="Search"
-                    class="srch p-2 w-[100%] bg-[#202327] outline-none border-none">
+                class="srch p-2 w-[100%] bg-[#202327] outline-none border-none">
             </div>
+        </div>
             <div class="subscribe mx-auto w-[90%] bg-[#202327] rounded-[1.1rem] ">
                 <div class="inner-sec px-4 py-3">
 
@@ -204,11 +239,78 @@
                 </a>
 
             </div>
-            <div class="follow">
-                <div class="follow-title text-xl font-extrabold">Who to follow</div>
-            </div>
+                <div class="follow mx-auto w-[90%] bg-[#202327] rounded-[1.1rem] my-4">
+                    <div class="follow-title text-xl font-extrabold px-4 py-3">Who to follow</div>
+                    <!--user details 1 -->
+                    <div class="new-user-details flex justify-start gap-3 items-center px-4 py-3 hover:bg-[#ffffff08] hover:cursor-pointer">
+                        <div class="img">
+                            <img class="w-11 rounded-full"
+                                src="https://pbs.twimg.com/profile_images/1683325380441128960/yRsRRjGO_200x200.jpg" alt="">
+                        </div>
+                        <div class="user-info flex flex-col">
+                            <span class="name flex items-center gap-2 hover:underline">
+                                Elon Musk <span><img src="./assets/img/verify.svg" alt="" class="w-[20px]"></span>
+                            </span>
+                            <span class="username text-[#71767b]">
+                                @elonmusk
+                            </span>
+                        </div>
+                        <div class="more ml-auto bg-white hover:bg-[#d7dbdc] text-black font-bold px-3 py-1 rounded-full">
+                            <span class="">Follow</span>
+                        </div>
+                    </div>
+                    <!--user details 2 -->
+                    <div class="new-user-details flex justify-start gap-3 items-center px-4 py-3 hover:bg-[#ffffff08] hover:cursor-pointer">
+                        <div class="img">
+                            <img class="w-11 rounded-full"
+                                src="https://pbs.twimg.com/profile_images/1688266765095276544/EyCtuQS2_200x200.jpg" alt="">
+                        </div>
+                        <div class="user-info flex flex-col">
+                            <span class="name flex items-center gap-2 hover:underline">
+                                Neeraj Walia<span><img src="./assets/img/verify.svg" alt="" class="w-[20px]"></span>
+                            </span>
+                            <span class="username text-[#71767b]">
+                                @ezSnippet
+                            </span>
+                        </div>
+                        <div class="more ml-auto bg-white hover:bg-[#d7dbdc] text-black font-bold px-3 py-1 rounded-full">
+                            <span class="">Follow</span>
+                        </div>
+                    </div>
+                    <!--user details 3 -->
+                    <div class="new-user-details flex justify-start gap-3 items-center px-4 py-3 hover:bg-[#ffffff08] hover:cursor-pointer">
+                        <div class="img">
+                            <img class="w-11 rounded-full"
+                                src="https://pbs.twimg.com/profile_images/1522060025854066688/IZs_lylH_200x200.png" alt="">
+                        </div>
+                        <div class="user-info flex flex-col">
+                            <span class="name flex items-center gap-2 hover:underline">
+                                Haris Ali Khan <span><img src="./assets/img/verify.svg" alt="" class="w-[20px]"></span>
+                            </span>
+                            <span class="username text-[#71767b]">
+                                @codewithharry
+                            </span>
+                        </div>
+                        <div class="more ml-auto bg-white hover:bg-[#d7dbdc] text-black font-bold px-3 py-1 rounded-full">
+                            <span class="">Follow</span>
+                        </div>
+                    </div>
+                    <a href="" class="text-[#1d9bf0]">
+                        <div class="px-4 py-3 hover:bg-[#ffffff08] hover:cursor-pointer">Show More</div>
+                    </a>
+                </div>
+                <div class="navFooter">
+                    <ul class="flex flex-wrap text-xs text-[#71767b] px-4 py-3">
+                        <li class="pr-3 hover:underline"><a href="">Terms of Service</a></li>
+                        <li class="pr-3 hover:underline"><a href="">Privacy Policy</a></li>
+                        <li class="pr-3 hover:underline"><a href="">Cookie Policy</a></li>
+                        <li class="pr-3 hover:underline"><a href="">Accessibility</a></li>
+                        <li class="pr-3 hover:underline"><a href="">Ads info</a></li>
+                        <li class="pr-3 hover:underline"><a href="">More</a></li>
+                        <span>© 2024 X Corp.</span>
+                    </ul>
+                </div>
         </div>
-    </div>
 </body>
 
 </html>
