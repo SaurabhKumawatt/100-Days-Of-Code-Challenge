@@ -13,7 +13,7 @@
 
 <body class="bg-black text-white">
     <div class="container flex w-[90%]  m-auto">
-        <div class="left container w-[50%] h-screen px-5 border-r-[1px]">
+        <div class="left sticky top-0 container w-[50%] h-screen px-5 border-r-[1px]">
             <div class="logo w-fit p-3 hover:bg-[#e7e9ea1a] hover:rounded-full hover:cursor-pointer">
                 <svg viewBox="0 0 24 24" aria-hidden="true"
                     class="invert w-7 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1nao33i r-16y2uox r-lwhw9o">
@@ -28,28 +28,36 @@
                 <ul>
                     <li
                         class="w-fit gap-2 flex justify-start items-center p-3 hover:bg-[#e7e9ea1a] will-change-contents hover:rounded-full hover:cursor-pointer font-bold text-xl">
-                        <span class="material-symbols-outlined text-[30px]">home</span>Home</li>
+                        <span class="material-symbols-outlined text-[30px]">home</span>Home
+                    </li>
                     <li
                         class="w-fit gap-2 flex justify-start items-center p-3 hover:bg-[#e7e9ea1a] will-change-contents hover:rounded-full hover:cursor-pointer font-bold text-xl">
-                        <span class="material-symbols-outlined text-[30px]">Search</span>Explore</li>
+                        <span class="material-symbols-outlined text-[30px]">Search</span>Explore
+                    </li>
                     <li
                         class="w-fit gap-2 flex justify-start items-center p-3 hover:bg-[#e7e9ea1a] will-change-contents hover:rounded-full hover:cursor-pointer font-bold text-xl">
-                        <span class="material-symbols-outlined text-[30px]">notifications</span>Notifications</li>
+                        <span class="material-symbols-outlined text-[30px]">notifications</span>Notifications
+                    </li>
                     <li
                         class="w-fit gap-2 flex justify-start items-center p-3 hover:bg-[#e7e9ea1a] will-change-contents hover:rounded-full hover:cursor-pointer font-bold text-xl">
-                        <span class="material-symbols-outlined text-[30px]">mail</span>Messages</li>
+                        <span class="material-symbols-outlined text-[30px]">mail</span>Messages
+                    </li>
                     <li
                         class="w-fit gap-2 flex justify-start items-center p-3 hover:bg-[#e7e9ea1a] will-change-contents hover:rounded-full hover:cursor-pointer font-bold text-xl">
-                        <span class="material-symbols-outlined text-[30px]">pen_size_2</span>Grok</li>
+                        <span class="material-symbols-outlined text-[30px]">pen_size_2</span>Grok
+                    </li>
                     <li
                         class="w-fit gap-2 flex justify-start items-center p-3 hover:bg-[#e7e9ea1a] will-change-contents hover:rounded-full hover:cursor-pointer font-bold text-xl">
-                        <span class="material-symbols-outlined text-[30px]">list_alt</span>Lists</li>
+                        <span class="material-symbols-outlined text-[30px]">list_alt</span>Lists
+                    </li>
                     <li
                         class="w-fit gap-2 flex justify-start items-center p-3 hover:bg-[#e7e9ea1a] will-change-contents hover:rounded-full hover:cursor-pointer font-bold text-xl">
-                        <span class="material-symbols-outlined text-[30px]">person</span>Account</li>
+                        <span class="material-symbols-outlined text-[30px]">person</span>Account
+                    </li>
                     <li
                         class="w-fit gap-2 flex justify-start items-center p-3 hover:bg-[#e7e9ea1a] will-change-contents hover:rounded-full hover:cursor-pointer font-bold text-xl">
-                        <span class="material-symbols-outlined text-[30px]">more</span>More</li>
+                        <span class="material-symbols-outlined text-[30px]">more</span>More
+                    </li>
                 </ul>
             </div>
             <div class="post-btn bg-[#1d9bf0] px-28 py-3 rounded-full m-1 cursor-pointer hover:bg-[#1d8cd8]">
@@ -76,7 +84,7 @@
             </div>
         </div>
         <div class="main w-full bg-black">
-            <div class="nav flex justify-around">
+            <div class="nav flex justify-around sticky top-0 z-1 bg-black border-solid border-b-[1px] border-gray-500">
                 <div class="foryou text-lg font-bold px-5 py-2 flex flex-col hover:bg-[#e7e9ea1a] cursor-pointer">
                     For You
                     <div class="bar min-w-3 h-1 bg-[#1d9bf0]"></div>
@@ -89,32 +97,117 @@
                     <span class="material-symbols-outlined">settings</span>
                 </div>
             </div>
-            <hr>
             <div class="post-box">
                 <div class="post flex gap-4 m-5 items-center">
 
                     <div class="img">
                         <img class="w-11 rounded-full"
-                        src="https://pbs.twimg.com/profile_images/1694335705303121920/ew23QFXV_normal.jpg" alt="">
+                            src="https://pbs.twimg.com/profile_images/1694335705303121920/ew23QFXV_normal.jpg" alt="">
                     </div>
                     <div class="msg">
-                        <input class="w-[34vw] bg-black outline-none text-xl" type="text" name="post" id="" placeholder="What is happening?!">
+                        <input class="w-[34vw] bg-black outline-none text-xl" type="text" name="post" id=""
+                            placeholder="What is happening?!">
                     </div>
                 </div>
-                <div class="attachment text-[#1d9bf0] flex items-center">
-                    <span class="material-symbols-outlined p-3 hover:bg-[#1d9bf01a] hover:rounded-full cursor-pointer">image</span>
-                    <span class="material-symbols-outlined p-3 hover:bg-[#1d9bf01a] hover:rounded-full cursor-pointer">gif_box</span>
-                    <span class="material-symbols-outlined p-3 hover:bg-[#1d9bf01a] hover:rounded-full cursor-pointer">checklist</span>
-                    <span class="material-symbols-outlined p-3 hover:bg-[#1d9bf01a] hover:rounded-full cursor-pointer">mood</span>
-                    <span class="material-symbols-outlined p-3 hover:bg-[#1d9bf01a] hover:rounded-full cursor-pointer">calendar_clock</span>
-                    <span class="material-symbols-outlined p-3 hover:bg-[#1d9bf01a] hover:rounded-full cursor-pointer">location_on</span>
-                    <div class="post-btn self-end">
+                <div class="attachment text-[#1d9bf0] flex items-center justify-between ml-[80px]">
+                    <div class="attachment flex items-center">
+
+                        <span
+                        class="material-symbols-outlined p-3 hover:bg-[#1d9bf01a] hover:rounded-full cursor-pointer">image</span>
+                        <span
+                        class="material-symbols-outlined p-3 hover:bg-[#1d9bf01a] hover:rounded-full cursor-pointer">gif_box</span>
+                    <span
+                        class="material-symbols-outlined p-3 hover:bg-[#1d9bf01a] hover:rounded-full cursor-pointer">checklist</span>
+                    <span
+                    class="material-symbols-outlined p-3 hover:bg-[#1d9bf01a] hover:rounded-full cursor-pointer">mood</span>
+                    <span
+                        class="material-symbols-outlined p-3 hover:bg-[#1d9bf01a] hover:rounded-full cursor-pointer">calendar_clock</span>
+                    <span
+                        class="material-symbols-outlined p-3 hover:bg-[#1d9bf01a] hover:rounded-full cursor-pointer">location_on</span>
+                    </div>
+                    <div class="post-btn">
                         <button>Post</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="right w-[50%] bg-black border-l"></div>
+        <div class="right w-[50%] bg-black border-l ">
+            <div
+                class="search-box  cursor-pointer w-[90%] bg-[#202327] overflow-hidden rounded-full flex items-center mx-auto my-3">
+                <label for="search">
+                    <span class="material-symbols-outlined p-2">search</span>
+                </label>
+                <input id="search" type="text" placeholder="Search"
+                    class="srch p-2 w-[100%] bg-[#202327] outline-none border-none">
+            </div>
+            <div class="subscribe mx-auto w-[90%] bg-[#202327] rounded-[1.1rem] ">
+                <div class="inner-sec px-4 py-3">
+
+                    <div class="sub-title text-xl font-extrabold pb-3">
+                        Subscribe to Premium
+                    </div>
+                    <div class="sbu-desc text-sm pb-3">
+                        Subscribe to unlock new features and if eligible, receive a share of ads revenue.
+                    </div>
+                    <div
+                        class="subscribe-btn bg-[#1d9bf0] rounded-full px-4 py-1 w-fit  cursor-pointer hover:bg-[#1d8cd8]">
+                        <a class="text-sm font-bold " href="">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="trending mx-auto w-[90%] bg-[#202327] rounded-[1.1rem] my-4">
+                <div class="trending-head text-xl font-extrabold px-4 py-3">
+                    What’s happening</div>
+                <div class="trend-details flex flex-col px-4 py-3 hover:bg-[#ffffff08] hover:cursor-pointer">
+                    <div class="flex justify-between">
+                        <span class="trend-topic text-sm text-[#71767b]">Spiritual · Trending</span>
+                        <span class="material-symbols-outlined">more_horiz</span>
+                    </div>
+                    <span class="trend-title text-lg font-bold">Ram Mandir</span>
+                    <span class="trend-posts text-sm text-[#71767b]">1M</span>
+                </div>
+                <div class="trend-details flex flex-col px-4 py-3 hover:bg-[#ffffff08] hover:cursor-pointer">
+                    <div class="flex justify-between">
+                        <span class="trend-topic text-sm text-[#71767b]">Spiritual · Trending</span>
+                        <span class="material-symbols-outlined">more_horiz</span>
+                    </div>
+                    <span class="trend-title text-lg font-bold">Ram Mandir</span>
+                    <span class="trend-posts text-sm text-[#71767b]">1M</span>
+                </div>
+                <div class="trend-details flex flex-col px-4 py-3 hover:bg-[#ffffff08] hover:cursor-pointer">
+                    <div class="flex justify-between">
+                        <span class="trend-topic text-sm text-[#71767b]">Spiritual · Trending</span>
+                        <span class="material-symbols-outlined">more_horiz</span>
+                    </div>
+                    <span class="trend-title text-lg font-bold">Ram Mandir</span>
+                    <span class="trend-posts text-sm text-[#71767b]">1M</span>
+                </div>
+                <div class="trend-details flex flex-col px-4 py-3 hover:bg-[#ffffff08] hover:cursor-pointer">
+                    <div class="flex justify-between">
+                        <span class="trend-topic text-sm text-[#71767b]">Spiritual · Trending</span>
+                        <span class="material-symbols-outlined">more_horiz</span>
+                    </div>
+                    <span class="trend-title text-lg font-bold">Ram Mandir</span>
+                    <span class="trend-posts text-sm text-[#71767b]">1M</span>
+                </div>
+                <div class="trend-details flex flex-col px-4 py-3 hover:bg-[#ffffff08] hover:cursor-pointer">
+                    <div class="flex justify-between">
+                        <span class="trend-topic text-sm text-[#71767b]">Spiritual · Trending</span>
+                        <span class="material-symbols-outlined">more_horiz</span>
+                    </div>
+                    <span class="trend-title text-lg font-bold">Ram Mandir</span>
+                    <span class="trend-posts text-sm text-[#71767b]">1M</span>
+                </div>
+                <a href="" class="text-[#1d9bf0]">
+                    <div class="px-4 py-3 hover:bg-[#ffffff08] hover:cursor-pointer">Show More</div>
+
+                </a>
+
+            </div>
+            <div class="follow">
+                <div class="follow-title text-xl font-extrabold">Who to follow</div>
+            </div>
+        </div>
     </div>
 </body>
 
